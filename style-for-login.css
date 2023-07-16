@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;  
+}
+
+body {
+    background-color: #EAE6F0;
+}
+#list {
+    overflow-y: auto;
+}
+.fact {
+    height: auto;
+    width: 645px;
+    background-color: white;
+    margin-top: 7px;
+    font-weight: 600;
+    padding: 4px 7px 0px 7px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+label {
+    cursor: pointer;
+}
+.input-area {
+    /* position: absolute;
+    bottom: 30px; */
+    display: flex;
+    flex-direction: column;
+    border: #D3BBDD dashed 2px;
+    border-radius: 5px;
+    padding: 7px;
+}
+.input-area p {
+    color: #A06AB4;
+    font-weight: 700;
+
+}
+#film-input {
+    display: flex;
+    flex-direction: row;
+}
+#score-input {
+    display: flex;
+    flex-direction: row;
+}
+
+#input-area-for-score, #input-area-for-text {
+    width: 300px;
+    margin-bottom: 5px;
+}
+.input-group-text {
+    width: 70px;
+    margin-bottom: 5px;
+}
+
+
+#head {
+    background-color: #66D2D6;
+    /* width: 100vw; */
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    width: 70px;
+    height: 70px;
+    background-image: url(Component2.svg);
+    margin-left: 40px;
+    border-radius: 4px;
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+#head-buttons {
+    /* background-color: rgb(128, 128, 128); */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 50px;
+}
+#log-in {
+    width: 100px;
+    height: 45px;
+    background-color: #D773A2;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    
+    border-radius: 6px;
+    text-align: center;
+    line-height: 40px;
+    /* border: green solid 2px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#test {
+    width: 100px;
+    height: 45px;
+    background-color: #D773A2;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    margin-right: 10px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 40px;
+    /* border: green solid 2px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#user-face {
+    width: 60px;
+    height: 60px;
+    background-color: #BD97CB;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: 3px dashed white;
+}
+#head-text {
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;  
+}
+#head-text:hover {
+    opacity: 80%;
+}
+
+/* Buttons */
+.buttton {
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+#all-facts{
+    background-color: #BD97CB;
+    border: #663a75 solid 2px;
+  
+}
+#one-fact{
+    background-color: #FBC740;
+    border: #d1a73e solid 2px;
+    }
+#liked-facts {
+    background-color: #66D2D6;
+    border: #479396 solid 2px;
+    } 
+#score-more-80 {
+    background-color: #E56997;
+    border: #c55d83 solid 2px;
+    }
+#sort-by-score {
+    background-color: #A06AB4;
+    border: #663a75 solid 2px;
+}
+#save-button {
+    width: 100px;
+    align-self: center;
+    background-color: #66D2D6;  
+    border: #3c9b9e solid 2px; 
+}
+
+#search-button {
+    background-color: #BD97CB;
+    border: #663a75 solid 2px;
+}
+
+#all-facts:hover, #save-button:hover, #one-fact:hover , #liked-facts:hover , 
+#score-more-80:hover ,  #sort-by-score:hover , #save-button:hover, #search-button:hover {
+    /* opacity: 70%; */
+    border: white solid 2px;
+    
+}
+
+
+
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+#search-container-conteiner {
+    width: 1070px;
+}
+
+#films-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+#left, #right {
+    margin: 15px;
+}
+
+/* Log in page */
+
+#log-in-page-container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #EAE6F0;
+}
+
+#log-in-container {
+    
+    margin-top: 10vh;
+    width: 400px;
+    /* background: linear-gradient(90deg,#95a592  0%, #748571  100%); */
+    background-color: #D773A2;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+}
+#log-in-container h2 {
+    margin-bottom: 10px;
+    
+}
+form {
+   
+    width: 100%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+#log-in-container .text-input {
+    margin-top: 5px;
+    margin-bottom: 1.3rem;
+    /* width: calc(100% - 2rem); */
+    border-radius: 5px;
+    background: #BF3880;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+
+}
+
+#log-in-container .primary-btn {
+    align-self: center;
+    width: 150px;
+    height: 30px;
+    color: #BF3880;
+    border: solid #BF3880 2px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+
+
+#log-in-container a, #log-in-container div {
+    
+    margin-bottom: 2px;
+    display: block;
+    color: white;
+    text-decoration: none;
+   /* background-color: thistle; */
+    text-align: center;
+    font-size: 0.9rem;
+    
+}
+#log-in-container a {
+    text-decoration: underline;
+
+}
+
+#symbols-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map-symbols img, #description-symbols img  {
+    align-self: center;
+    justify-self: center;
+    width: 90vw;
+    margin-top: 20px;
+}
+
+}
+#home:hover, #symbols:hover, #links:hover, #exercises:hover {
+    background-color: #95a791;
+}
+#log-in:hover{
+    background-color: #FFD743;
+   
+}
+#test:hover {
+    background-color: #FFD743;
+}
+input:focus {
+    outline: none;
+    border: none;
+}
+#log-in-container a:hover {
+    color: #ffdfee;;
+}
+#log-in-container .primary-btn:hover {
+    background-color: #ffdfee;
+    /* color: #F652A0; */
+}
